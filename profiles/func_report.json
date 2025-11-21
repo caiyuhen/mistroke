@@ -1,0 +1,12 @@
+{
+  "waveform_complexity": {
+    "baseline": 5.099980626255274e-06,
+    "optimized": 1.800013706088066e-06,
+    "improvement_pct": 64.70547953022815
+  },
+  "signal_quality_autocorr": {
+    "baseline": 0.0003244999679736793,
+    "optimized": 0.0002631000243127346,
+    "improvement_pct": 18.921402071116674
+  }
+}

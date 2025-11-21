@@ -1,0 +1,179 @@
+=== Baseline cProfile ===
+         3769817 function calls (3693713 primitive calls) in 322.627 seconds
+
+   Ordered by: cumulative time
+   List reduced from 5607 to 50 due to restriction <50>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     68/2    0.001    0.000  322.619  161.309 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\monitor.py:252(_check_server)
+    133/1    0.001    0.000  322.578  322.578 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\monitor.py:76(target)
+     68/1    0.001    0.000  322.578  322.578 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\monitor.py:210(_run)
+      2/1    0.008    0.004  322.472  322.472 D:\workspace_cn\workspace\DEMO_Stroke11162226\scripts\perf_ippg.py:16(run_main_once)
+      2/1    0.089    0.044  303.335  303.335 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:700(main)
+    30/15    0.000    0.000  279.296   18.620 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\_csot.py:118(csot_wrapper)
+    14/12    0.000    0.000  279.171   23.264 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:2016(_retryable_read)
+  952/948    0.000    0.000  260.070    0.274 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\cursor.py:1288(__next__)
+  952/948    0.002    0.000  260.069    0.274 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\cursor.py:1258(next)
+    23/20    0.000    0.000  260.066   13.003 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\cursor.py:1176(_refresh)
+    13/11    0.001    0.000  260.065   23.642 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\cursor.py:1093(_send_message)
+    13/11    0.000    0.000  260.064   23.642 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:1888(_run_operation)
+        1    0.000    0.000   93.845   93.845 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:852(_auto_tune_if_needed)
+        2    0.000    0.000   93.845   46.922 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:839(_measure_read_time)
+        2    0.000    0.000   93.838   46.919 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:610(process_devices_parallel)
+        8    0.001    0.000   61.242    7.655 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:669(fetch_device_rows)
+    14/12    0.000    0.000   56.058    4.672 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:1977(_retry_internal)
+    15/13    0.000    0.000   48.907    3.762 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:2905(_read)
+    92/27    0.001    0.000   48.723    1.805 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\helpers.py:41(inner)
+    14/12    0.000    0.000   46.031    3.836 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:2747(run)
+     16/9    0.549    0.034   44.435    4.937 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:576(_process_one_device)
+       14    0.000    0.000   39.442    2.817 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:1922(_cmd)
+       14    0.001    0.000   39.441    2.817 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\server.py:137(run_operation)
+        5    0.000    0.000   32.883    6.577 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\_base.py:646(__exit__)
+        1    0.000    0.000   19.107   19.107 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\collection.py:3138(distinct)
+        1    0.000    0.000   19.107   19.107 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\collection.py:2165(_retryable_non_cursor_read)
+        8    0.045    0.006   15.044    1.880 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:265(decompress_rows)
+    78/66    0.002    0.000   12.693    0.192 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\pool.py:353(command)
+    78/66    0.006    0.000   12.689    0.192 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\network.py:61(command)
+   1330/5    0.027    0.000   12.076    2.415 <frozen importlib._bootstrap>:1349(_find_and_load)
+   1301/5    0.031    0.000   12.076    2.415 <frozen importlib._bootstrap>:1304(_find_and_load_unlocked)
+   1057/6    0.005    0.000   12.072    2.012 <frozen importlib._bootstrap_external>:1020(exec_module)
+   1267/5    0.019    0.000   12.069    2.414 <frozen importlib._bootstrap>:911(_load_unlocked)
+  3059/10    0.007    0.000   12.065    1.207 <frozen importlib._bootstrap>:480(_call_with_frames_removed)
+   1296/6    0.200    0.000   12.064    2.011 {built-in method builtins.exec}
+        1    0.000    0.000   12.031   12.031 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:457(process_batch)
+        1    0.000    0.000   12.016   12.016 D:\workspace_cn\workspace\DEMO_Stroke11162226\process_vascular_analysis.py:1(<module>)
+   320/72    0.002    0.000    9.914    0.138 {built-in method builtins.__import__}
+ 1511/525    0.013    0.000    9.789    0.019 <frozen importlib._bootstrap>:1390(_handle_fromlist)
+        3    0.000    0.000    9.109    3.036 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\collection.py:580(_command)
+        1    0.000    0.000    9.080    9.080 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\collection.py:3204(_cmd)
+      931    8.425    0.009    8.425    0.009 {method 'tolist' of 'numpy.ndarray' objects}
+        1    0.000    0.000    7.543    7.543 D:\workspace_cn\workspace\DEMO_Stroke11162226\ppg_vascular_analysis.py:1(<module>)
+28972/23544    0.025    0.000    7.527    0.000 {built-in method builtins.hasattr}
+     38/4    0.000    0.000    7.472    1.868 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\importlib\__init__.py:71(import_module)
+     38/4    0.000    0.000    7.472    1.868 <frozen importlib._bootstrap>:1375(_gcd_import)
+     35/1    0.000    0.000    7.457    7.457 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\scipy\__init__.py:141(__getattr__)
+        1    0.000    0.000    7.456    7.456 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\scipy\signal\__init__.py:1(<module>)
+        1    0.000    0.000    7.442    7.442 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\scipy\signal\_support_alternative_backends.py:1(<module>)
+        1    0.000    0.000    6.426    6.426 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\scipy\signal\_signal_api.py:1(<module>)
+
+
+
+=== Optimized cProfile ===
+         2652995 function calls (2650068 primitive calls) in 162.898 seconds
+
+   Ordered by: cumulative time
+   List reduced from 1186 to 50 due to restriction <50>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.011    0.011  162.849  162.849 D:\workspace_cn\workspace\DEMO_Stroke11162226\scripts\perf_ippg.py:16(run_main_once)
+        1    0.001    0.001  162.838  162.838 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:700(main)
+    25/14    0.000    0.000  131.743    9.410 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\_csot.py:118(csot_wrapper)
+    88/47    0.003    0.000  131.656    2.801 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\network_layer.py:746(receive_message)
+  190/107    0.070    0.000  131.578    1.230 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\network_layer.py:325(receive_data)
+       11    0.000    0.000  131.380   11.944 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:2016(_retryable_read)
+7514/7367    0.119    0.000  130.931    0.018 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\network_layer.py:292(wait_for_read)
+8206/7900    0.101    0.000  130.742    0.017 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\socket_checker.py:45(select)
+       10    0.000    0.000  125.130   12.513 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:1888(_run_operation)
+      944    0.000    0.000  123.018    0.130 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\cursor.py:1288(__next__)
+      944    0.002    0.000  122.863    0.130 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\cursor.py:1258(next)
+       17    0.001    0.000  122.859    7.227 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\cursor.py:1176(_refresh)
+        9    0.001    0.000  122.857   13.651 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\cursor.py:1093(_send_message)
+8206/7900  104.840    0.013   99.779    0.013 {built-in method select.select}
+        1    0.000    0.000   56.560   56.560 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:852(_auto_tune_if_needed)
+        2    0.000    0.000   56.559   28.280 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:839(_measure_read_time)
+        2    0.000    0.000   56.553   28.277 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:610(process_devices_parallel)
+        3    0.092    0.031   47.389   15.796 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\_base.py:646(__exit__)
+     16/9    0.684    0.043   35.253    3.917 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:576(_process_one_device)
+       39    0.001    0.000   26.469    0.679 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\threading.py:641(wait)
+       27    0.001    0.000   26.469    0.980 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\_base.py:199(as_completed)
+        3    0.000    0.000   26.411    8.804 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\thread.py:220(shutdown)
+       15    0.000    0.000   26.410    1.761 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\threading.py:1056(join)
+       15    0.001    0.000   26.410    1.761 {method 'join' of '_thread._ThreadHandle' objects}
+       11    0.000    0.000   25.000    2.273 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:1977(_retry_internal)
+       11    0.000    0.000   24.999    2.273 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:2747(run)
+       11    0.000    0.000   24.999    2.273 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:2905(_read)
+       10    0.000    0.000   18.746    1.875 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:1922(_cmd)
+       10    0.001    0.000   18.745    1.874 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\server.py:137(run_operation)
+        8    0.051    0.006   18.018    2.252 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:265(decompress_rows)
+        8    0.001    0.000   16.809    2.101 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:669(fetch_device_rows)
+    56/15    0.001    0.000   16.676    1.112 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\helpers.py:41(inner)
+      927    8.355    0.009    8.355    0.009 {method 'tolist' of 'numpy.ndarray' objects}
+        1    0.000    0.000    6.250    6.250 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\collection.py:2921(aggregate)
+        1    0.000    0.000    6.250    6.250 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\collection.py:2889(_aggregate)
+        1    0.000    0.000    6.250    6.250 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py:133(get_cursor)
+        8    5.120    0.640    5.428    0.678 D:\workspace_cn\workspace\DEMO_Stroke11162226\decompressed_comp_ppg_data.py:255(uncompression_and_check_data)
+    41309    0.012    0.000    2.454    0.000 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\command_cursor.py:341(__next__)
+    41309    0.020    0.000    2.442    0.000 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\command_cursor.py:331(next)
+    41308    0.049    0.000    2.386    0.000 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\command_cursor.py:344(_try_next)
+        1    0.000    0.000    2.275    2.275 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\command_cursor.py:294(_refresh)
+        1    0.001    0.001    2.275    2.275 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\command_cursor.py:250(_send_message)
+     40/2    0.001    0.000    2.247    1.124 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\pool.py:460(receive_message)
+    70/31    0.001    0.000    2.022    0.065 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\monitor.py:76(target)
+    46/32    0.001    0.000    1.878    0.059 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\pool.py:353(command)
+    46/32    0.003    0.000    1.878    0.059 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\network.py:61(command)
+    39/30    0.002    0.000    1.852    0.062 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\pool.py:260(_hello)
+    34/32    0.000    0.000    1.662    0.052 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\monitor.py:478(_run)
+    34/32    0.001    0.000    1.661    0.052 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\monitor.py:491(_ping)
+    35/32    0.000    0.000    1.655    0.052 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\pool.py:257(hello)
+
+
+
+=== Optimized With Sleep Sampling cProfile ===
+         2733907 function calls (2729849 primitive calls) in 294.776 seconds
+
+   Ordered by: cumulative time
+   List reduced from 1176 to 50 due to restriction <50>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000  292.952  292.952 D:\workspace_cn\workspace\DEMO_Stroke11162226\scripts\perf_ippg.py:16(run_main_once)
+        1    0.098    0.098  280.387  280.387 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:700(main)
+  296/175    0.098    0.000  261.981    1.497 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\network_layer.py:325(receive_data)
+10862/10661    0.190    0.000  261.726    0.025 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\network_layer.py:292(wait_for_read)
+   141/80    0.003    0.000  261.683    3.271 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\network_layer.py:746(receive_message)
+    25/14    0.000    0.000  261.593   18.685 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\_csot.py:118(csot_wrapper)
+12170/11795    0.153    0.000  261.483    0.022 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\socket_checker.py:45(select)
+       11    0.000    0.000  261.472   23.770 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:2016(_retryable_read)
+       10    0.000    0.000  255.490   25.549 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:1888(_run_operation)
+      946    0.000    0.000  249.392    0.264 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\cursor.py:1288(__next__)
+      946    0.002    0.000  249.392    0.264 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\cursor.py:1258(next)
+       17    0.000    0.000  249.389   14.670 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\cursor.py:1176(_refresh)
+        9    0.000    0.000  249.388   27.710 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\cursor.py:1093(_send_message)
+12170/11795  197.290    0.016  192.343    0.016 {built-in method select.select}
+        1    0.000    0.000   72.600   72.600 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:852(_auto_tune_if_needed)
+        2    0.000    0.000   72.600   36.300 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:839(_measure_read_time)
+        2    0.000    0.000   72.593   36.296 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:610(process_devices_parallel)
+        8    0.001    0.000   42.322    5.290 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:669(fetch_device_rows)
+       12    0.000    0.000   37.296    3.108 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:2905(_read)
+       11    0.000    0.000   31.969    2.906 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:1977(_retry_internal)
+       11    0.000    0.000   31.969    2.906 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:2747(run)
+    83/21    0.001    0.000   31.451    1.498 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\helpers.py:41(inner)
+       11    0.000    0.000   31.311    2.846 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\mongo_client.py:1922(_cmd)
+       11    0.001    0.000   31.310    2.846 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\server.py:137(run_operation)
+    41369    0.012    0.000   12.389    0.000 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\command_cursor.py:341(__next__)
+    41369    0.020    0.000   12.377    0.000 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\command_cursor.py:331(next)
+    41368    0.050    0.000   12.321    0.000 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\command_cursor.py:344(_try_next)
+        1    0.001    0.001   12.088   12.088 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\command_cursor.py:294(_refresh)
+      929    8.415    0.009    8.415    0.009 {method 'tolist' of 'numpy.ndarray' objects}
+        8    6.271    0.784    6.604    0.826 D:\workspace_cn\workspace\DEMO_Stroke11162226\decompressed_comp_ppg_data.py:255(uncompression_and_check_data)
+        8    0.049    0.006    6.478    0.810 D:\workspace_cn\workspace\DEMO_Stroke11162226\iPPG_info.py:265(decompress_rows)
+    64/60    0.001    0.000    6.453    0.108 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\threading.py:327(wait)
+        1    0.001    0.001    6.104    6.104 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\command_cursor.py:250(_send_message)
+        1    0.000    0.000    5.982    5.982 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\collection.py:2921(aggregate)
+        1    0.000    0.000    5.982    5.982 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\collection.py:2889(_aggregate)
+        1    0.000    0.000    5.981    5.981 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\aggregation.py:133(get_cursor)
+       38    0.000    0.000    5.728    0.151 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\threading.py:641(wait)
+       27    0.001    0.000    5.728    0.212 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\_base.py:199(as_completed)
+     20/4    0.000    0.000    5.630    1.408 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\threading.py:998(_bootstrap)
+        3    0.000    0.000    5.333    1.778 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\_base.py:646(__exit__)
+        3    0.000    0.000    5.333    1.778 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\thread.py:220(shutdown)
+       15    0.000    0.000    5.333    0.356 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\threading.py:1056(join)
+       15    0.001    0.000    5.333    0.356 {method 'join' of '_thread._ThreadHandle' objects}
+    10859    0.014    0.000    3.634    0.000 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\network_layer.py:468(recv_into)
+    72/61    0.002    0.000    3.622    0.059 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\pool.py:353(command)
+    72/61    0.006    0.000    3.620    0.059 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\network.py:61(command)
+    65/59    0.003    0.000    3.593    0.061 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\pool.py:260(_hello)
+   121/60    0.001    0.000    3.013    0.050 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\monitor.py:76(target)
+       59    0.000    0.000    2.623    0.044 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\monitor.py:478(_run)
+       59    0.001    0.000    2.622    0.044 D:\workspace_cn\workspace\DEMO_Stroke11162226\.venv\Lib\site-packages\pymongo\synchronous\monitor.py:491(_ping)
+
+

@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  ippg:
+    image: ippg-pipeline:latest
+    build: .
+    env_file:
+      - compose.env
+    volumes:
+      - ./output:/app/output
+      - ./analysis_results:/app/analysis_results
+      - ./logs:/app/logs
+    restart: on-failure:3
+    command: ["python", "/app/__pycache__/iPPG_info300.cpython-313.pyc", "--workers", "12", "--batch-size", "6000", "--chunk-size", "6000", "--benchmark"]

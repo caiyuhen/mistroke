@@ -1,0 +1,75 @@
+{
+  "window": {
+    "start": "2025-11-15T14:21:03.983120+00:00",
+    "end": "2025-11-16T14:21:03.983120+00:00"
+  },
+  "analysis_dir": "D:\\workspace_cn\\workspace\\DEMO_Stroke\\analysis_results_20251116_222252",
+  "devices": [
+    {
+      "device_id": "507211305001282",
+      "json_path": "D:\\workspace_cn\\workspace\\DEMO_Stroke\\output\\507211305001282_20251116_222255.json",
+      "status": "ok",
+      "fallback": false
+    },
+    {
+      "device_id": "601012306062702",
+      "json_path": "D:\\workspace_cn\\workspace\\DEMO_Stroke\\output\\601012306062702_20251116_222303.json",
+      "status": "ok",
+      "fallback": false
+    },
+    {
+      "device_id": "602111301002090",
+      "json_path": "D:\\workspace_cn\\workspace\\DEMO_Stroke\\output\\602111301002090_20251116_222313.json",
+      "status": "ok",
+      "fallback": false
+    },
+    {
+      "device_id": "601031301000970",
+      "json_path": "D:\\workspace_cn\\workspace\\DEMO_Stroke\\output\\601031301000970_20251116_222321.json",
+      "status": "ok",
+      "fallback": false
+    },
+    {
+      "device_id": "801811012032950",
+      "json_path": "D:\\workspace_cn\\workspace\\DEMO_Stroke\\output\\801811012032950_20251116_222329.json",
+      "status": "ok",
+      "fallback": false
+    },
+    {
+      "device_id": "807612503009216",
+      "json_path": "D:\\workspace_cn\\workspace\\DEMO_Stroke\\output\\807612503009216_20251116_222340.json",
+      "status": "ok",
+      "fallback": false
+    },
+    {
+      "device_id": "801811008015605",
+      "json_path": "D:\\workspace_cn\\workspace\\DEMO_Stroke\\output\\801811008015605_20251116_222350.json",
+      "status": "ok",
+      "fallback": false
+    },
+    {
+      "device_id": "601012202060768",
+      "json_path": "D:\\workspace_cn\\workspace\\DEMO_Stroke\\output\\601012202060768_20251116_222359.json",
+      "status": "ok",
+      "fallback": false
+    },
+    {
+      "device_id": "807612508078182",
+      "json_path": "D:\\workspace_cn\\workspace\\DEMO_Stroke\\output\\807612508078182_20251116_222408.json",
+      "status": "ok",
+      "fallback": false
+    },
+    {
+      "device_id": "107252502017113",
+      "json_path": "D:\\workspace_cn\\workspace\\DEMO_Stroke\\output\\107252502017113_20251116_222418.json",
+      "status": "ok",
+      "fallback": false
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "ok": 10,
+    "no_rows": 0,
+    "errors": 0
+  }
+}

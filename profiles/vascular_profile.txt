@@ -1,0 +1,58 @@
+         24772 function calls (24478 primitive calls) in 35.297 seconds
+
+   Ordered by: cumulative time
+   List reduced from 382 to 50 due to restriction <50>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000   35.297   35.297 D:\workspace_cn\workspace\DEMO_Stroke11162226\process_vascular_analysis.py:1753(process_all_files)
+        1    0.000    0.000   35.296   35.296 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\_base.py:646(__exit__)
+        1    0.000    0.000   35.296   35.296 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\process.py:837(shutdown)
+      2/1    0.000    0.000   35.291   35.291 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\threading.py:1056(join)
+      2/1    0.001    0.000   35.291   35.291 {method 'join' of '_thread._ThreadHandle' objects}
+      2/1    0.000    0.000   35.290   35.290 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\threading.py:998(_bootstrap)
+      2/1    0.000    0.000   35.290   35.290 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\threading.py:1025(_bootstrap_inner)
+        1    0.000    0.000   35.290   35.290 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\process.py:330(run)
+        1    0.000    0.000   35.290   35.290 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\process.py:549(join_executor_internals)
+        1    0.000    0.000   35.290   35.290 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\process.py:553(_join_executor_internals)
+       25    0.002    0.000   34.877    1.395 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\_base.py:263(wait)
+       17    0.000    0.000   34.862    2.051 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\util.py:197(__call__)
+        1    0.000    0.000   34.861   34.861 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\queues.py:145(join_thread)
+        1    0.000    0.000   34.861   34.861 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\queues.py:212(_finalize_join)
+       44    0.001    0.000   34.782    0.791 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\process.py:405(wait_result_broken_or_wakeup)
+       95    0.001    0.000   34.776    0.366 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\connection.py:1044(wait)
+       95    0.001    0.000   34.770    0.366 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\connection.py:1010(_exhaustive_wait)
+      131   34.768    0.265   34.768    0.265 {built-in method _winapi.WaitForMultipleObjects}
+      150    0.000    0.000    0.430    0.003 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\popen_spawn_win32.py:105(wait)
+      150    0.429    0.003    0.429    0.003 {built-in method _winapi.WaitForSingleObject}
+       15    0.000    0.000    0.429    0.029 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\process.py:142(join)
+       25    0.000    0.000    0.125    0.005 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\process.py:783(submit)
+       25    0.000    0.000    0.064    0.003 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\process.py:749(_adjust_process_count)
+       15    0.000    0.000    0.064    0.004 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\process.py:772(_spawn_process)
+       15    0.000    0.000    0.056    0.004 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\process.py:110(start)
+       15    0.000    0.000    0.055    0.004 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\context.py:334(_Popen)
+       15    0.000    0.000    0.052    0.003 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\popen_spawn_win32.py:46(__init__)
+       15    0.048    0.003    0.048    0.003 {built-in method _winapi.CreateProcess}
+    27/26    0.001    0.000    0.017    0.001 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\threading.py:641(wait)
+       44    0.000    0.000    0.006    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\process.py:91(clear)
+       70    0.000    0.000    0.005    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\connection.py:253(poll)
+       70    0.000    0.000    0.005    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\connection.py:342(_poll)
+       15    0.001    0.000    0.003    0.000 <frozen os>:750(copy)
+       30    0.000    0.000    0.003    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\reduction.py:58(dump)
+       70    0.002    0.000    0.003    0.000 {method 'dump' of '_pickle.Pickler' objects}
+     1081    0.001    0.000    0.002    0.000 <frozen os>:711(__getitem__)
+       25    0.000    0.000    0.002    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\connection.py:246(recv)
+    66/64    0.000    0.000    0.002    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\connection.py:182(send_bytes)
+      131    0.002    0.000    0.002    0.000 {method 'cancel' of '_winapi.Overlapped' objects}
+       45    0.000    0.000    0.002    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\process.py:382(add_call_item_to_queue)
+       26    0.000    0.000    0.002    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\process.py:86(wakeup)
+    66/64    0.000    0.000    0.001    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\connection.py:284(_send_bytes)
+     1081    0.001    0.000    0.001    0.000 <frozen os>:785(encodekey)
+      135    0.000    0.000    0.001    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\popen_spawn_win32.py:123(poll)
+       51    0.000    0.000    0.001    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\connection.py:310(_recv_bytes)
+      189    0.001    0.000    0.001    0.000 {built-in method _winapi.ReadFile}
+    43/16    0.000    0.000    0.001    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\threading.py:327(wait)
+       25    0.000    0.000    0.001    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\process.py:435(process_result_item)
+       15    0.000    0.000    0.001    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\multiprocessing\process.py:61(_cleanup)
+       25    0.000    0.000    0.001    0.000 C:\Users\蔡宇衡-杜仲\python-sdk\python3.13.2\Lib\concurrent\futures\_base.py:537(set_result)
+
+

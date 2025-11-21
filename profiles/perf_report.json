@@ -1,0 +1,13 @@
+{
+  "baseline": {
+    "elapsed_seconds": 23.623801600013394,
+    "mem_peak_bytes": 237203923,
+    "processed_files": 1
+  },
+  "optimized": {
+    "elapsed_seconds": 23.053926500026137,
+    "mem_peak_bytes": 237201217,
+    "processed_files": 1
+  },
+  "improvement_pct": 2.412292101144865
+}

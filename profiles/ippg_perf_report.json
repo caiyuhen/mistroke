@@ -1,0 +1,18 @@
+{
+  "baseline": {
+    "elapsed_seconds": 322.63144630001625,
+    "mem_peak_bytes": 157761804
+  },
+  "optimized": {
+    "elapsed_seconds": 162.8569964999915,
+    "mem_peak_bytes": 156705048
+  },
+  "optimized_with_sleep_sampling": {
+    "elapsed_seconds": 294.06929250003304,
+    "mem_peak_bytes": 156681533
+  },
+  "improve_time_pct": 49.52228049445926,
+  "improve_mem_pct": 0.6698427459665712,
+  "improve_time_pct_sampling": 8.852873496225518,
+  "improve_mem_pct_sampling": 0.6847481282605009
+}

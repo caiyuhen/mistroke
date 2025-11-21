@@ -1,0 +1,227 @@
+{
+  "cluster": {
+    "host": "mongoreplica29ed1d62f12a1.mongodb.cn-beijing.volces.com",
+    "db": "andun_1",
+    "collection": "device_collect_compress_data"
+  },
+  "existingIndexes": [
+    {
+      "name": "_id_",
+      "key": [
+        [
+          "_id",
+          1
+        ]
+      ],
+      "unique": false
+    },
+    {
+      "name": "deviceid",
+      "key": [
+        [
+          "deviceId",
+          1
+        ]
+      ],
+      "unique": false
+    },
+    {
+      "name": "code",
+      "key": [
+        [
+          "code",
+          1
+        ]
+      ],
+      "unique": false
+    },
+    {
+      "name": "collecttime",
+      "key": [
+        [
+          "collectTime",
+          1
+        ]
+      ],
+      "unique": false
+    },
+    {
+      "name": "createtime",
+      "key": [
+        [
+          "createTime",
+          -1
+        ]
+      ],
+      "unique": false
+    },
+    {
+      "name": "pass_index",
+      "key": [
+        [
+          "pass",
+          1
+        ]
+      ],
+      "unique": false
+    },
+    {
+      "name": "deviceId_1_collectTime_-1",
+      "key": [
+        [
+          "deviceId",
+          1
+        ],
+        [
+          "collectTime",
+          -1
+        ]
+      ],
+      "unique": false
+    },
+    {
+      "name": "date_1",
+      "key": [
+        [
+          "date",
+          1
+        ]
+      ],
+      "unique": false
+    },
+    {
+      "name": "createDate_1",
+      "key": [
+        [
+          "createDate",
+          1
+        ]
+      ],
+      "unique": false
+    },
+    {
+      "name": "collectTime_1_deviceId_1",
+      "key": [
+        [
+          "collectTime",
+          1
+        ],
+        [
+          "deviceId",
+          1
+        ]
+      ],
+      "unique": false
+    }
+  ],
+  "collectionStats": {
+    "count": 221149706,
+    "size": 919566406262,
+    "storageSize": 1235538583552,
+    "totalIndexSize": 59438632960,
+    "indexSizes": {
+      "_id_": 10458460160,
+      "deviceid": 2723909632,
+      "code": 6328242176,
+      "collecttime": 7428665344,
+      "createtime": 8100773888,
+      "pass_index": 6195011584,
+      "deviceId_1_collectTime_-1": 6187151360,
+      "date_1": 3556614144,
+      "createDate_1": 3545149440,
+      "collectTime_1_deviceId_1": 4914655232
+    }
+  },
+  "queryPatterns": [
+    {
+      "name": "distinct_device_in_time",
+      "filter": [
+        "collectTime: $gte,$lte"
+      ],
+      "distinct": "deviceId",
+      "neededIndex": [
+        [
+          "deviceId",
+          1
+        ],
+        [
+          "collectTime",
+          1
+        ]
+      ],
+      "matched": false
+    },
+    {
+      "name": "find_device_time_sorted",
+      "filter": [
+        "deviceId",
+        "collectTime: $gte,$lte"
+      ],
+      "sort": [
+        "collectTime:1"
+      ],
+      "neededIndex": [
+        [
+          "deviceId",
+          1
+        ],
+        [
+          "collectTime",
+          1
+        ]
+      ],
+      "matched": false
+    },
+    {
+      "name": "stream_all_by_time",
+      "filter": [
+        "collectTime: $gte,$lte"
+      ],
+      "sort": [
+        "collectTime:1",
+        "deviceId:1"
+      ],
+      "neededIndex": [
+        [
+          "collectTime",
+          1
+        ],
+        [
+          "deviceId",
+          1
+        ]
+      ],
+      "matched": true
+    }
+  ],
+  "suggestions": [
+    {
+      "create": [
+        [
+          "deviceId",
+          1
+        ],
+        [
+          "collectTime",
+          1
+        ]
+      ],
+      "reason": "distinct deviceId with collectTime range"
+    }
+  ],
+  "estimatedNewIndexSizes": [
+    {
+      "keys": [
+        [
+          "deviceId",
+          1
+        ],
+        [
+          "collectTime",
+          1
+        ]
+      ],
+      "estimatedSizeBytes": 19240024422
+    }
+  ]
+}
